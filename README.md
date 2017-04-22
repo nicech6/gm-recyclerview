@@ -1,4 +1,4 @@
-# EasyRecyclerView Adapter
+# EasyRecyclerView
 # SetUp 
 ## 1) In your root build.gradle:
 allprojects {
