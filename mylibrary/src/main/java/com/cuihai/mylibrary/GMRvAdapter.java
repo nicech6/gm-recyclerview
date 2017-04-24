@@ -17,7 +17,7 @@ import java.util.List;
  * usage:  适用于比较简单的RecyclerView适配器
  */
 
-public abstract class EasyRvAdapter<T> extends RecyclerView.Adapter<EasyRvViewHolder> {
+public abstract class GMRvAdapter<T> extends RecyclerView.Adapter<GMRvViewHolder> {
     protected Context mContext;
     protected int mLayoutId;
     protected List<T> mDatas;
@@ -25,7 +25,7 @@ public abstract class EasyRvAdapter<T> extends RecyclerView.Adapter<EasyRvViewHo
     private OnItemClickListener mOnItemClickListener;
     private OnItemLongClickListener mOnItemLongClickListener;
 
-    public EasyRvAdapter(Context mContext, int mLayoutId, List<T> mDatas) {
+    public GMRvAdapter(Context mContext, int mLayoutId, List<T> mDatas) {
         this.mInflater = LayoutInflater.from(mContext);
         this.mContext = mContext;
         this.mLayoutId = mLayoutId;
@@ -33,7 +33,7 @@ public abstract class EasyRvAdapter<T> extends RecyclerView.Adapter<EasyRvViewHo
     }
 
     @Override
-    public void onBindViewHolder(EasyRvViewHolder holder, final int position) {
+    public void onBindViewHolder(GMRvViewHolder holder, final int position) {
         convert(holder, mDatas.get(position), position);
         if (mOnItemClickListener != null) {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -55,12 +55,12 @@ public abstract class EasyRvAdapter<T> extends RecyclerView.Adapter<EasyRvViewHo
 
     }
 
-    public abstract void convert(EasyRvViewHolder easyRvViewHolder, T t, int position);
+    public abstract void convert(GMRvViewHolder easyRvViewHolder, T t, int position);
 
     @Override
-    public EasyRvViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public GMRvViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = mInflater.inflate(mLayoutId, parent, false);
-        return new EasyRvViewHolder(view);
+        return new GMRvViewHolder(view);
     }
 
 
