@@ -12,7 +12,7 @@ allprojects {
 <pre><code>
  compile 'com.github.icuihai:EasyRecyclerView:v1.0'
 </code></pre>
-## about Me
+## About Me
 weibo : <https://www.weibo.com/icuihai>
 
 gmail  : icuihai@gmail.com
