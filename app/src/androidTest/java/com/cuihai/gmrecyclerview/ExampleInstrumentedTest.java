@@ -1,4 +1,4 @@
-package com.cuihai.easyrecyclerview;
+package com.cuihai.gmrecyclerview;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

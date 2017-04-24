@@ -1,4 +1,4 @@
-package com.cuihai.easyrecyclerview;
+package com.cuihai.gmrecyclerview;
 
 import org.junit.Test;
 
