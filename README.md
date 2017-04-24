@@ -1,4 +1,4 @@
-# GMRecyclerView
+# gm-recyclerview
 # SetUp 
 ## 1) In your root build.gradle:
 allprojects {
@@ -10,7 +10,7 @@ allprojects {
 }
 ### 2) In your library/build.gradle add:
 <pre><code>
- compile 'com.github.icuihai:GMRecyclerView:v1.0'
+  compile 'com.github.icuihai:gm-recyclerview:v1.0'
 </code></pre>
 ## About Me
 weibo : <https://www.weibo.com/icuihai>
