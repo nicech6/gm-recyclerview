@@ -10,7 +10,7 @@ allprojects {
 }
 ### 2) In your library/build.gradle add:
 <pre><code>
-  compile 'com.github.icuihai:gm-recyclerview:v1.0'
+  compile 'com.github.icuihai:gm-recyclerview:1.0.1'
 </code></pre>
 ## About Me
 weibo : <https://www.weibo.com/icuihai>
